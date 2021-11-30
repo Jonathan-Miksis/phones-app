@@ -1,1 +1,8 @@
 <h1>Here are all of the phones</h1>
+
+<% @phones.each do |phone| %>
+  <p>Manufacterer: <%= phone.maker %></p>
+  <p>Color: <%= phone.color %></p>
+  <p>Size: <%= phone.size %></p>
+  <hr>
+<% end %>
